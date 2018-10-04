@@ -1,3 +1,22 @@
+import {ConstraintResolution} from './classes/ConstraintResolution';
+import {SimpleVertex} from './classes/SimpleVertex';
+import {WhiteVertex} from './classes/WhiteVertex';
+import {BlackVertex} from './classes/BlackVertex';
+import {AdjacentWhiteVerticesPair} from './classes/AdjacentWhiteVerticesPair';
+import {VerticalSolverEdge} from './classes/VerticalSolverEdge';
+import {HorizontalSolverEdge} from './classes/HorizontalSolverEdge';
+import {SolverCell} from './classes/SolverCell';
+import {Line} from './classes/Line';
+
+import {
+    puzzleSpecialVertices,
+    resolvedEdges,
+    EdgeState,
+    CellState,
+    animationSteps,
+    recordAnimationStep
+} from "./globals";
+
 const message: string = `OMG, it's Typescript!`;
 console.log(message);
 
@@ -54,25 +73,6 @@ async function animate() {
 }
 
 console.log('Initializing solver for ' + puzzWidth + '×' + puzzHeight);
-
-import {ConstraintResolution} from './classes/ConstraintResolution';
-import {SimpleVertex} from './classes/SimpleVertex';
-import {WhiteVertex} from './classes/WhiteVertex';
-import {BlackVertex} from './classes/BlackVertex';
-import {AdjacentWhiteVerticesPair} from './classes/AdjacentWhiteVerticesPair';
-import {VerticalSolverEdge} from './classes/VerticalSolverEdge';
-import {HorizontalSolverEdge} from './classes/HorizontalSolverEdge';
-import {SolverCell} from './classes/SolverCell';
-import {Line} from './classes/Line';
-
-import {
-    puzzleSpecialVertices,
-    resolvedEdges,
-    EdgeState,
-    CellState,
-    animationSteps,
-    recordAnimationStep
-} from "./globals";
 
 let unsolvedConstraints = [];
 const vertices = [];
