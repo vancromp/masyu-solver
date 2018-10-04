@@ -20,6 +20,12 @@ My current solution for maintaining this script is to copy/paste it between my I
 Since the scripts are stored in SQLite,
 [there does not seem to be an easy way to synchronize the two](https://stackoverflow.com/a/11860530/525036()).
 
+### Proposal
+
+- install node dependencies: `yarn install`
+- run dev server: `yarn dev`
+- build production userscript: `yarn build`
+
 ## Implementation
 ### Constraints and Puzzle Representation
 

@@ -1,10 +1,5 @@
-// ==UserScript==
-// @name         Krazydad Masyu Solver
-// @version    1
-// @grant        none
-// @include         https://krazydad.com/tablet/masyu/*
-// @run-at            document-idle
-// ==/UserScript==
+const message: string = `OMG, it's Typescript!`;
+console.log(message);
 
 const solvePuzzle = true;
 const animationInterval = 50;

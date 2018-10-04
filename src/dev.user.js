@@ -6,5 +6,5 @@
 // ==/UserScript==
 
 const scriptElement = document.createElement('script');
-scriptElement.setAttribute('src', 'http://localhost:8000/masyu-solver.user.js');
+scriptElement.setAttribute('src', 'http://localhost:1234/masyu-solver.user.js');
 document.body.appendChild(scriptElement);

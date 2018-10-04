@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "parcel-bundler": "^1.10.1",
+    "typescript": "^3.1.1"
+  },
+  "scripts": {
+    "dev": "parcel src/masyu-solver.user.ts",
+    "build": "parcel build src/masyu-solver.user.ts --no-source-maps && cat src/masyu-solver.user.header.js > dist/tmpfile && cat dist/masyu-solver.user.js >> dist/tmpfile && rm dist/masyu-solver.user.js && mv dist/tmpfile dist/masyu-solver.user.js"
+  }
+}
