@@ -12,7 +12,8 @@ const autoGoToNext = false;
 const goToNextDelay = 2000;
 
 if (!solvePuzzle) {
-    return;
+    // to avoid syntax error when the script is run via injection of a script tag...
+    throw new Error('stop execution');
 }
 
 let puzzWidth = window.puzzWidth;
@@ -21,8 +22,7 @@ let myVerts = window.myVerts;
 let myEdges = window.myEdges;
 let myCells = window.myCells;
 if (!puzzWidth || !puzzHeight || !myVerts || !myEdges || !myCells) {
-    console.log(`Solver: missing key variable (${puzzWidth}, ${puzzHeight}, ${myVerts}, ${myEdges}, ${myCells})`);
-    return;
+    throw new Error(`Solver: missing key variable (${puzzWidth}, ${puzzHeight}, ${myVerts}, ${myEdges}, ${myCells})`);
 }
 
 function getVert(x, y) {
