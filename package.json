@@ -5,6 +5,6 @@
   },
   "scripts": {
     "dev": "parcel src/main.ts --out-file masyu-solver.user.js",
-    "build": "parcel build src/main.ts --out-file masyu-solver.user.js --no-source-maps && cat src/userscript-header.js > dist/tmpfile && cat dist/masyu-solver.user.js >> dist/tmpfile && rm dist/masyu-solver.user.js && mv dist/tmpfile dist/masyu-solver.user.js"
+    "build": "sh build.sh"
   }
 }
